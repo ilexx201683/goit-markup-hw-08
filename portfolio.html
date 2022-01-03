@@ -45,6 +45,44 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button class="header__menu-button menu-button" type="button">
+                <svg class="menu-button__icon" width="40" height="40">
+                    <use href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="header__mob-menu mob-menu is-hidden">
+            <div class="container">
+                <div class="mob-menu__top">
+                    <button class="mob-menu__button-close button-close" type="button">
+                        <svg class="button-close__icon" width="18" height="18">
+                            <use href="./images/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                    <ul class="list mob-menu__list mob-nav">
+                        <li class="mob-nav__item"><a class="link mob-nav__link" href="./index.html">Студия</a></li>
+                        <li class="mob-nav__item"><a class="link mob-nav__link mob-nav__link--current" href="">Портфолио</a></li>
+                        <li class="mob-nav__item"><a class="link mob-nav__link" href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mob-menu__bottom">
+                    <ul class="list mob-menu__contacts mob-contacts">
+                        <li class="mob-contacts__item">
+                            <a class="link mob-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-contacts__item">
+                            <a class="link mob-contacts__link mob-contacts__link--font-size mob-contacts__link--color"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="list mob-menu__social mob-social">
+                        <li class="mob-social__item"><a class="link mob-social__link" href="">Instagram</a></li>
+                        <li class="mob-social__item"><a class="link mob-social__link" href="">Twitter</a></li>
+                        <li class="mob-social__item"><a class="link mob-social__link" href="">Facebook</a></li>
+                        <li class="mob-social__item"><a class="link mob-social__link" href="">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -63,7 +101,30 @@
                     <li class="cards-list__item">
                         <a class="link cards-list__link" href="">
                             <div class="cards-list__box">
-                                <img src="./images/works-img-1.jpg" alt="открытый ноутбук" width="370" height="294">
+                                <picture>
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-dt-img-1.jpg 1x, 
+                                        ./images/works/works-dt-img-1-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-tab-img-1.jpg 1x, 
+                                        ./images/works/works-tab-img-1-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-mob-img-1.jpg 1x, 
+                                        ./images/works/works-mob-img-1-2x.jpg 2x"  
+                                    media="(min-width: 320px)"
+                                    >
+                                    <img 
+                                    src="./images/works/works-mob-img-1-2x" 
+                                    alt="открытый ноутбук"
+                                    >
+                                </picture>
                                 <p class="cards-list__top-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="cards-list__box-text">
@@ -75,7 +136,30 @@
                     <li class="cards-list__item">
                         <a class="link cards-list__link" href="">
                             <div class="cards-list__box">
-                                <img src="./images/works-img-2.jpg" alt="два человека играют в баскетбол" width="370" height="294">
+                                <picture>
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-dt-img-2.jpg 1x, 
+                                        ./images/works/works-dt-img-2-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-tab-img-2.jpg 1x, 
+                                        ./images/works/works-tab-img-2-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-mob-img-2.jpg 1x, 
+                                        ./images/works/works-mob-img-2-2x.jpg 2x"  
+                                    media="(min-width: 320px)"
+                                    >
+                                    <img 
+                                    src="./images/works/works-mob-img-2-2x" 
+                                    alt="два человека играют в баскетбол"
+                                    >
+                                </picture>
                                 <p class="cards-list__top-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="cards-list__box-text">
@@ -87,7 +171,30 @@
                     <li class="cards-list__item">
                         <a class="link cards-list__link" href="">
                             <div class="cards-list__box">
-                                <img src="./images/works-img-3.jpg" alt="логотип ресторана на фоне рыбы" width="370" height="294">
+                                <picture>
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-dt-img-3.jpg 1x, 
+                                        ./images/works/works-dt-img-3-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-tab-img-3.jpg 1x, 
+                                        ./images/works/works-tab-img-3-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-mob-img-3.jpg 1x, 
+                                        ./images/works/works-mob-img-3-2x.jpg 2x"  
+                                    media="(min-width: 320px)"
+                                    >
+                                    <img 
+                                    src="./images/works/works-mob-img-3-2x" 
+                                    alt="логотип ресторана на фоне рыбы"
+                                    >
+                                </picture>
                                 <p class="cards-list__top-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="cards-list__box-text">
@@ -99,7 +206,30 @@
                     <li class="cards-list__item">
                         <a class="link cards-list__link" href="">
                             <div class="cards-list__box">
-                                <img src="./images/works-img-4.jpg" alt="наушники" width="370" height="294">
+                                <picture>
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-dt-img-4.jpg 1x, 
+                                        ./images/works/works-dt-img-4-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-tab-img-4.jpg 1x, 
+                                        ./images/works/works-tab-img-4-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-mob-img-4.jpg 1x, 
+                                        ./images/works/works-mob-img-4-2x.jpg 2x"  
+                                    media="(min-width: 320px)"
+                                    >
+                                    <img 
+                                    src="./images/works/works-mob-img-4-2x" 
+                                    alt="наушники"
+                                    >
+                                </picture>
                                 <p class="cards-list__top-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="cards-list__box-text">
@@ -111,7 +241,30 @@
                     <li class="cards-list__item">
                         <a class="link cards-list__link" href="">
                             <div class="cards-list__box">
-                                <img src="./images/works-img-5.jpg" alt="две коробки" width="370" height="294">
+                                <picture>
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-dt-img-5.jpg 1x, 
+                                        ./images/works/works-dt-img-5-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-tab-img-5.jpg 1x, 
+                                        ./images/works/works-tab-img-5-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-mob-img-5.jpg 1x, 
+                                        ./images/works/works-mob-img-5-2x.jpg 2x"  
+                                    media="(min-width: 320px)"
+                                    >
+                                    <img 
+                                    src="./images/works/works-mob-img-5-2x" 
+                                    alt="две коробки"
+                                    >
+                                </picture>
                                 <p class="cards-list__top-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="cards-list__box-text">
@@ -123,7 +276,30 @@
                     <li class="cards-list__item">
                         <a class="link cards-list__link" href="">
                             <div class="cards-list__box">
-                                <img src="./images/works-img-6.jpg" alt="монитор" width="370" height="294">
+                                <picture>
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-dt-img-6.jpg 1x, 
+                                        ./images/works/works-dt-img-6-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-tab-img-6.jpg 1x, 
+                                        ./images/works/works-tab-img-6-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-mob-img-6.jpg 1x, 
+                                        ./images/works/works-mob-img-6-2x.jpg 2x"  
+                                    media="(min-width: 320px)"
+                                    >
+                                    <img 
+                                    src="./images/works/works-mob-img-6-2x" 
+                                    alt="монитор"
+                                    >
+                                </picture>
                                 <p class="cards-list__top-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="cards-list__box-text">
@@ -135,7 +311,30 @@
                     <li class="cards-list__item">
                         <a class="link cards-list__link" href="">
                             <div class="cards-list__box">
-                                <img src="./images/works-img-7.jpg" alt="открытые страницы журнала" width="370" height="294">
+                                <picture>
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-dt-img-7.jpg 1x, 
+                                        ./images/works/works-dt-img-7-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-tab-img-7.jpg 1x, 
+                                        ./images/works/works-tab-img-7-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-mob-img-7.jpg 1x, 
+                                        ./images/works/works-mob-img-7-2x.jpg 2x"  
+                                    media="(min-width: 320px)"
+                                    >
+                                    <img 
+                                    src="./images/works/works-mob-img-7-2x" 
+                                    alt="открытые страницы журнала"
+                                    >
+                                </picture>
                                 <p class="cards-list__top-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="cards-list__box-text">
@@ -147,7 +346,30 @@
                     <li class="cards-list__item">
                         <a class="link cards-list__link" href="">
                             <div class="cards-list__box">
-                                <img src="./images/works-img-8.jpg" alt="бирка" width="370" height="294">
+                                <picture>
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-dt-img-8.jpg 1x, 
+                                        ./images/works/works-dt-img-8-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-tab-img-8.jpg 1x, 
+                                        ./images/works/works-tab-img-8-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-mob-img-8.jpg 1x, 
+                                        ./images/works/works-mob-img-8-2x.jpg 2x"  
+                                    media="(min-width: 320px)"
+                                    >
+                                    <img 
+                                    src="./images/works/works-mob-img-8-2x" 
+                                    alt="бирка"
+                                    >
+                                </picture>
                                 <p class="cards-list__top-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="cards-list__box-text">
@@ -159,7 +381,30 @@
                     <li class="cards-list__item">
                         <a class="link cards-list__link" href="">
                             <div class="cards-list__box">
-                                <img src="./images/works-img-9.jpg" alt="руки на клавиатуре ноутбука" width="370" height="294">
+                                <picture>
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-dt-img-9.jpg 1x, 
+                                        ./images/works/works-dt-img-9-2x.jpg 2x" 
+                                    media="(min-width: 1200px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-tab-img-9.jpg 1x, 
+                                        ./images/works/works-tab-img-9-2x.jpg 2x" 
+                                    media="(min-width: 768px)"
+                                    >
+                                    <source 
+                                    srcset="
+                                        ./images/works/works-mob-img-9.jpg 1x, 
+                                        ./images/works/works-mob-img-9-2x.jpg 2x"  
+                                    media="(min-width: 320px)"
+                                    >
+                                    <img 
+                                    src="./images/works/works-mob-img-9-2x" 
+                                    alt="руки на клавиатуре ноутбука"
+                                    >
+                                </picture>
                                 <p class="cards-list__top-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="cards-list__box-text">
@@ -243,6 +488,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
